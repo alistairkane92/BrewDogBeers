@@ -23,6 +23,7 @@ var createBeerAndImage = function(beers){
         li.innerText = item.name;
         li.classList = "beer-titles"
 
+        //name & image
         var div = document.createElement('div');
         div.classList.add('beer-div')
         div.appendChild(li);
@@ -31,8 +32,14 @@ var createBeerAndImage = function(beers){
         img.classList.add("beer-image")
         div.appendChild(img);
         display.appendChild(div);
+
+        var tag = document.createElement('li');
+        tag.classList.add("tag");
+        tag.innerText = item.tagline;
+        div.appendChild(tag);
     }
 }
+
 
 var app = function(){
     var url = "https://api.punkapi.com/v2/beers"

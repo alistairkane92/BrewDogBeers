@@ -1,5 +1,6 @@
 main{
     width: 3000px;
+    height: 2000px;
     background-color: black;
 }
 
@@ -12,7 +13,7 @@ input{
 }
 
 .beer-image{
-    margin-left: 20px;
+    margin-left: 50px;
     width: 50px;
     padding: 5px, 5px, 5px 5px;
 }
@@ -34,14 +35,21 @@ input{
     border-color: white;
     border-style:solid;
     width: 155px;
-    height: 230px;
+    height: 320px;
+}
+
+.tag{
+    font-family: arial;
+    font-style: italic;
+    list-style: none;
+    padding: 5px;
 }
 
 
 #beer-list{
     margin-left: 150px;
     width: 900px;
-    height: 1250px;
+    height: 1800px;
     background-color: blue;
     display:flex;
     flex-wrap: wrap;
