@@ -11,19 +11,29 @@ var requestComplete = function(){
     var jsonString = this.responseText;
     var beers = JSON.parse(jsonString);
 
-    displayBeers(beers);
+    createLi(returnNames(beers));
 }
 
-var displayBeers = function(beers){
-    var display = document.getElementById("beer-list");
+var returnNames = function(beers){
+    namesArray = [];
 
     for (beer of beers){
-        var newItem = document.createElement("li");
-        newItem.innerText = beer.name;
-        display.appendChild(newItem);
+        namesArray.push(beer.name);
     }
+
+    return namesArray
 }
 
+var createLi = function(array){
+    console.log(array);
+    var display = document.getElementById("beer-list");
+
+    for (item of array){
+        var li = document.createElement('li');
+        li.innerText = item;
+        display.appendChild(li);
+    }
+}
 var app = function(){
     var url = "https://api.punkapi.com/v2/beers"
     makeRequest(url, requestComplete);
