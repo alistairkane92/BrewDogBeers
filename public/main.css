@@ -1,6 +1,6 @@
 main{
-  width: 300px;
-  margin: 0 auto;
+    width: 3000px;
+    background-color: black;
 }
 
 input{
@@ -11,10 +11,39 @@ input{
   margin: 10px;
 }
 
-.beers{
-  padding: 5px;
+.beer-image{
+    margin-left: 20px;
+    width: 50px;
+    padding: 5px, 5px, 5px 5px;
 }
 
-.beer-image{
-    width: 30px;
+.beer-titles{
+    font-family: arial;
+    background-color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    list-style: none;
+    width: auto;
+    margin-top: 5px;
+    border-style: double;
+}
+
+.beer-div{
+    padding: 3px;
+    border-color: white;
+    border-style:solid;
+    width: 155px;
+    height: 230px;
+}
+
+
+#beer-list{
+    margin-left: 150px;
+    width: 900px;
+    height: 1250px;
+    background-color: blue;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
