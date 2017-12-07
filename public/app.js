@@ -37,6 +37,33 @@ var createBeerAndImage = function(beers){
         tag.classList.add("tag");
         tag.innerText = item.tagline;
         div.appendChild(tag);
+
+        var ingr = document.createElement('li');
+        ingr.classList.add('ingr');
+
+
+        var ingredientsTxt = document.createElement('li');
+        ingredientsTxt.classList.add('ingrtxt')
+        ingredientsTxt.innerText = "INGREDIENTS:"
+        div.appendChild(ingredientsTxt);
+
+        var ingredientsArray = [];
+        //fills array wih 3 ingr
+        for(i = 0; i < item.ingredients.malt.length; i++){
+            ingredientsArray.push(item.ingredients.malt[i]);
+            i++;
+        }
+
+        console.log(ingredientsArray);
+
+        for(malt of ingredientsArray){
+            var ingrLi = document.createElement('li');
+            ingrLi.classList.add('ingrlst');
+            ingrLi.innerText += malt.name;
+            div.appendChild(ingrLi);
+        }
+
+        ingredientsArray = [];
     }
 }
 

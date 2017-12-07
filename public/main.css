@@ -1,6 +1,6 @@
 main{
     width: 3000px;
-    height: 2000px;
+    height: 2700px;
     background-color: black;
 }
 
@@ -35,21 +35,37 @@ input{
     border-color: white;
     border-style:solid;
     width: 155px;
-    height: 320px;
+    height: 480px;
 }
 
 .tag{
     font-family: arial;
+    color: white;
     font-style: italic;
     list-style: none;
     padding: 5px;
 }
 
+.ingrlst{
+    display: flex;
+    justify-content: center;
+    font-family: arial;
+
+    padding: 10px;
+}
+
+
+.ingrtxt{
+    text-align: center;
+    font-family:arial;
+    font-weight: 400;
+    list-style: none;
+}
 
 #beer-list{
     margin-left: 150px;
     width: 900px;
-    height: 1800px;
+    height: 2500px;
     background-color: blue;
     display:flex;
     flex-wrap: wrap;
